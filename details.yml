@@ -8,9 +8,6 @@ address:
 - 94122
 phone: "+1 415 990 2303"
 email: terryworona@gmail.com
-urls: # sans http://
-- terryworona.com
-- twitter.com/terryworona
 
 # Intro
 
@@ -52,13 +49,13 @@ education:
 opensource:
 - title: JBChartView
   description: iOS charting library for both line and bar graphs.
-  link: github.com/terryworona/JBChartView # sans http://
+  link: github.com/terryworona/JBChartView # no http://
 - title: Simple CV
   description: LaTeX resume generation. 
-  link: github.com/terryworona/simple-cv # sans http://
+  link: github.com/terryworona/simple-cv # no http://
 - title: TWMessageBarManager
   description: iOS system-wide notifications via a dropdown message bar.
-  link: github.com/terryworona/TWMessageBarManager # sans http:// 
+  link: github.com/terryworona/TWMessageBarManager # no http:// 
 
 extra:
 - title: Mobile Face Recognition
@@ -67,6 +64,9 @@ extra:
 
 # Settings
 
+background-red: 0.929
+background-green: 0.921
+background-blue: 0.905
 fontsize: 10pt
 geometry: a4paper, left=35mm, right=35mm, top=30mm, bottom=10mm
 lang: en-GB
