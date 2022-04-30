@@ -65,6 +65,10 @@ It's recommended that you **fork** this repository if you want to maintain your 
 2. Run `make` to compile the PDF.
 3. Tweak on `template.tex` until you're satisfied with the result.
 
+LaTeX takes then care of the typesetting with its usual elegance. Below a preview of the final result. Check out [output](output.pdf) to see the compiled PDF.
+
+![preview](preview.png)
+
 ## Settings
 
 - `background-red`, `background-green`, `background-blue` - the RGB values for the background color (for plain white, use `1.0`, `1.0`, `1.0`).
