@@ -108,31 +108,36 @@ $if(email)$
 \href{mailto:$email$}{$email$}
 $endif$
 
-
+\vspace{.5cm}
 
 % INTRO
 %--------------------------------
 
 % About
+$if(about)$
 $for(about)$
 $about$\\[.5cm]
 $endfor$
+$endif$
 
-% Content
+% CONTENT
 %--------------------------------
 
 % Education
+$if(education)$
 \section*{Education}
 \noindent
 $for(education)$
 \note{$education.year$}\textsc{$education.subject$}$if(education.degree)$, $education.degree$$endif$\\
 \emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\[.5cm]
 $endfor$
+$endif$
 
 % 2 column layout
 \begin{multicols}{2}
 
 % Expierence
+$if(experience)$
 \section*{Experience}
 \noindent
 $for(experience)$
@@ -140,22 +145,27 @@ $for(experience)$
 \emph{$experience.job$}\\
 $experience.city$\\[.5cm]
 $endfor$
+$endif$
 
 \columnbreak % new column
 
 % Open Source
+$if(opensource)$ 
 \section*{Open Source}
 $for(opensource)$
 \href{http://$opensource.link$}{$opensource.title$}\\
 \emph{$opensource.description$}\\[.5cm]
 $endfor$
+$endif$
 
 % Extra
+$if(extra)$
 \section*{Extra}
 $for(extra)$
 \href{http://$extra.link$}{$extra.title$}\\
 \emph{$extra.description$}\\[.5cm]
 $endfor$
+$endif$
 
 \end{multicols}
 

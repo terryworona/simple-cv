@@ -1,69 +1,59 @@
 ---
 # Header
 
-name: Terry Worona
+name: John Doe
 address:
-- 1885 37th Ave
-- San Francisco, CA
-- 94122
-phone: "+1 415 990 2303"
-email: terryworona@gmail.com
-urls: # sans http://
-- terryworona.com
-- twitter.com/terryworona
+- 1 Infinite Loop
+- Cupertino, CA
+- 90210
+phone: "+1 555 123 4567"
+email: johndoe@gmail.com
 
 # Intro
 
 about:
-- "I am a Staff Software Engineer at \\href{https://www.uber.com/us/en/uberai/}{Uber AI}; working on next-generation ML initiatives to provide insight into realtime and offline systems. I am a strong supporter of open source software, and an active contributor on \\href{https://github.com/terryworona}{Github}."
-- "Prior to Uber, I was a Staff engineer at \\href{https://www.jawbone.com/}{Jawbone}, a pioneer health wearable company, where I oversaw the collection, persistence and management of millions of personal health records. "
-- "I was also the principal iOS engineer at \\href{https://www.getaround.com/}{Getaround}, a peer-to-peer car sharing service, where I drove the mobile roadmap from ideation to a full production release. To date, I’ve delivered more than 15 unique iOS applications to the Apple App Store, across a wide spectrum of industries ranging from healthcare, gaming, transportation and the sharing economy."
+- "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+- "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+- "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia \\href{https://www.google.com/}{deserunt} mollit anim id est laborum."
 
 # Content
 
 experience:
-- years: 2017--Present
-  employer: Uber AI
+- years: 2020--Present
+  employer: Apple
+  job: Senior Staff Software Engineer
+  city: Cupertino, USA
+- years: 2013-2020
+  employer: Facebook
   job: Staff Software Engineer
   city: San Francisco, USA
-- years: 2013-2017
-  employer: Jawbone (Aliphcom)
-  job: Senior Staff Software Engineer
-  city: San Francisco, USA
 - years: 2012-2013
-  employer: Senior Software Engineer
-  job: Getaround
+  employer: Google
+  job: Senior Software Engineer
   city: San Francisco, USA
 - years: 2010-2012
-  employer: Select Start Studios
-  job: Application Architect
-  city: Ottawa, Canada
-- years: 2006-2010
-  employer: FINTRAC (Federal Gov't of Canada)
+  employer: Research In Motion
   job: Software Engineer
-  city: Ottawa, Canada
+  city: Windsor, Canada
 
 education:
 - year: 2010
-  subject: BCS, Highest Honors & University Medal
-  institute: Carleton University
-  city: Ottawa, Canada
+  subject: Bachelor of Computer Science
+  institute: MIT
+  city: Cambridge, MA
 
 opensource:
-- title: JBChartView
-  description: iOS charting library for both line and bar graphs.
-  link: github.com/terryworona/JBChartView # sans http://
 - title: Simple CV
-  description: LaTeX resume generation. 
-  link: github.com/terryworona/simple-cv # sans http://
-- title: TWMessageBarManager
-  description: iOS system-wide notifications via a dropdown message bar.
-  link: github.com/terryworona/TWMessageBarManager # sans http:// 
+  description: LaTeX resume generation.
+  link: github.com/terryworona/simple-cv # no http://
+- title: RxSwift
+  description: Swift-specific implementation of the Reactive Extensions standard.
+  link: github.com/ReactiveX/RxSwift # no http:// 
 
 extra:
-- title: Mobile Face Recognition
-  description: Undergraduate honors project.
-  link: www.dropbox.com/s/6f10q422tc65hiu/Mobile_Face_Recognition.pdf?dl=1 # sans http:// 
+- title: Swift Studio Chanllenge
+  description: 2020 receipient winner - Swift ML
+  link: developer.apple.com/wwdc22/swift-student-challenge/ # sans http:// 
 
 # Settings
 
@@ -71,4 +61,5 @@ fontsize: 10pt
 geometry: a4paper, left=35mm, right=35mm, top=30mm, bottom=10mm
 lang: en-GB
 mainfont: Hoefler Text
+
 ---
