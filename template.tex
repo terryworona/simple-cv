@@ -14,10 +14,10 @@
 
 % Enable multicolumns
 \usepackage{multicol}
-\setlength{\columnsep}{-3.5cm}
+% \setlength{\columnsep}{-3.5cm}
 
 % Uncomment to suppress page numbers
-% \pagenumbering{gobble}
+\pagenumbering{gobble}
 
 % LANGUAGE
 %--------------------------------
@@ -41,7 +41,7 @@ $endif$
 % MARGIN NOTES
 %--------------------------------
 \usepackage{marginnote}
-\newcommand{\note}[1]{\marginnote{\scriptsize #1}}
+\newcommand{\note}[1]{\marginnote{\small #1}}
 \renewcommand*{\raggedleftmarginnote}{}
 \setlength{\marginparsep}{7pt}
 \reversemarginpar
@@ -50,9 +50,12 @@ $endif$
 %--------------------------------
 \usepackage{sectsty} 
 \usepackage[normalem]{ulem} 
+\usepackage{titlesec} 
 \sectionfont{\rmfamily\mdseries} 
 \subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
 \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+\titlespacing*{\section}
+{0pt}{0pt}{.5cm} % left, top, bottom
 
 % PDF SETUP
 %--------------------------------
@@ -64,82 +67,96 @@ $endif$
   pdftitle={$name$'s CV},
   colorlinks, breaklinks, xetex, bookmarks,
   filecolor=black,
-  urlcolor=[rgb]{0.117,0.682,0.858},
-  linkcolor=[rgb]{0.117,0.682,0.858},
-  linkcolor=[rgb]{0.117,0.682,0.858},
-  citecolor=[rgb]{0.117,0.682,0.858}
+  urlcolor=[rgb]{0.0,0.0,0.93},
+  linkcolor=[rgb]{0.0,0.0,0.93},
+  citecolor=[rgb]{0.0,0.0,0.93}
 }
+
+% PAGE
+%--------------------------------
+\usepackage{pagecolor}
+\definecolor{background}{rgb}{0.929, 0.921, 0.905}
 
 % DOCUMENT
 %--------------------------------
 \begin{document}
 
-{\LARGE $name$}\\[.2cm]
+\pagecolor{background}
 
-$if(urls)$
-\begin{multicols}{2}
+% HEADER
+%--------------------------------
+
+% Name
+$if(name)$
+{\LARGE $name$}\\
 $endif$
 
+% Address
+$if(address)$
 $for(address)$
 $address$\\
 $endfor$
+$endif$
 
-\vspace{-10pt}
+% Phone 
+$if(phone)$
+$phone$
+$endif$
 
-$phone$\\
-\href{mailto:$email$}{$email$}\\
+% Email
+$if(email)$
+\href{mailto:$email$}{$email$}
+$endif$
 
 
-$if(urls)$
-\columnbreak
 
-$for(urls)$
-\href{http://$urls$}{$urls$}\\
+% INTRO
+%--------------------------------
+
+% About
+$for(about)$
+$about$\\[.5cm]
 $endfor$
-\end{multicols}
-$endif$
 
-\vspace{30pt}
+% Content
+%--------------------------------
 
-$if(intro)$
-$intro$
-$endif$
+% Education
+\section*{Education}
+\noindent
+$for(education)$
+\note{$education.year$}\textsc{$education.subject$}$if(education.degree)$, $education.degree$$endif$\\
+\emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\[.5cm]
+$endfor$
 
-\subsection*{Areas of Interest}
-$if(skills)$
-\begin{itemize}
-    $for(skills)$
-      \item $skills$
-    $endfor$
-\end{itemize}
-$endif$
+% 2 column layout
+\begin{multicols}{2}
 
-% \vfill
-
-\vspace{25pt}
-
-\section*{Previous Experience}
+% Expierence
+\section*{Experience}
 \noindent
 $for(experience)$
 \note{$experience.years$}\textsc{$experience.employer$}\\
 \emph{$experience.job$}\\
-$experience.city$\\[.2cm]
+$experience.city$\\[.5cm]
 $endfor$
 
-$if(education)$
-\section*{Education}
-\noindent
-$for(education)$
-\note{$education.year$}\textbf{$education.subject$}$if(education.degree)$, $education.degree$$endif$\\
-\emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\[.2cm]
-$endfor$
-$endif$
+\columnbreak % new column
 
-$if(languages)$
-\section*{Languages}
-$for(languages)$
-\emph{$languages.language$} ($languages.proficiency$)\\
+% Open Source
+\section*{Open Source}
+$for(opensource)$
+\href{http://$opensource.link$}{$opensource.title$}\\
+\emph{$opensource.description$}\\[.5cm]
 $endfor$
-$endif$
+
+% Extra
+\section*{Extra}
+$for(extra)$
+\href{http://$extra.link$}{$extra.title$}\\
+\emph{$extra.description$}\\[.5cm]
+$endfor$
+
+\end{multicols}
 
 \end{document}

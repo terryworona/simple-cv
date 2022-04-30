@@ -1,54 +1,74 @@
 ---
-# Personal details
-name: Friedrich Nietzsche
+# Header
+
+name: Terry Worona
 address:
-- Humboldtstraße 36
-- 99425 Weimar
-- Prussia
-phone: "+49 03643 545400"
-email: friedrich@thevoid.de
-# Insert URLs without http://
-urls:
-- wki.pe/friedrich_nietzsche
-- twitter.com/tinynietzsche
+- 1885 37th Ave
+- San Francisco, CA
+- 94122
+phone: "+1 415 990 2303"
+email: terryworona@gmail.com
+urls: # sans http://
+- terryworona.com
+- twitter.com/terryworona
 
-# Sections
+# Intro
 
-intro: "I know my fate. One day my name will be associated with the memory of something tremendous --- a crisis without equal on earth, the most profound collision of conscience, a decision that was conjured up against everything that had been believed, demanded, hallowed so far. I am no man, I am dynamite."
+about:
+- "I am a Staff Software Engineer at \\href{https://www.uber.com/us/en/uberai/}{Uber AI}; working on next-generation ML initiatives to provide insight into realtime and offline systems. I am a strong supporter of open source software, and an active contributor on \\href{https://github.com/terryworona}{Github}."
+- "Prior to Uber, I was a Staff engineer at \\href{https://www.jawbone.com/}{Jawbone}, a pioneer health wearable company, where I oversaw the collection, persistence and management of millions of personal health records. "
+- "I was also the principal iOS engineer at \\href{https://www.getaround.com/}{Getaround}, a peer-to-peer car sharing service, where I drove the mobile roadmap from ideation to a full production release. To date, I’ve delivered more than 15 unique iOS applications to the Apple App Store, across a wide spectrum of industries ranging from healthcare, gaming, transportation and the sharing economy."
 
-skills:
-- Aesthetics, Ethics, Metaphysics, Nihilism
-- Psychology, Ontology, Poetry, Value theory
-- Voluntarism, Tragedy, Fact–value distinction
-- Anti-foundationalism, Philosophy of history
+# Content
 
 experience:
-- years: 1879--1889
-  employer: Freiberufler
-  job: Freier Philosoph
-  city: Sils-Maria
-- years: 1869–-1879
-  employer: Universität Basel
-  job: Professor für klassische Philologie
-  city: Basel
-- years: 1867--1868
-  employer: Preußische Artillerie
-  job: Kanonier
-  city: Naumburg
+- years: 2017--Present
+  employer: Uber AI
+  job: Staff Software Engineer
+  city: San Francisco, USA
+- years: 2013-2017
+  employer: Jawbone (Aliphcom)
+  job: Senior Staff Software Engineer
+  city: San Francisco, USA
+- years: 2012-2013
+  employer: Senior Software Engineer
+  job: Getaround
+  city: San Francisco, USA
+- years: 2010-2012
+  employer: Select Start Studios
+  job: Application Architect
+  city: Ottawa, Canada
+- years: 2006-2010
+  employer: FINTRAC (Federal Gov't of Canada)
+  job: Software Engineer
+  city: Ottawa, Canada
 
 education:
-- year: 1867
-  subject: Philology
-  institute: Universität Leipzig
-  city: Leipzig
-- year: 1864
-  subject: Abitur
-  institute: Schulpforta
-  city: Naumburg
+- year: 2010
+  subject: BCS, Highest Honors & University Medal
+  institute: Carleton University
+  city: Ottawa, Canada
+
+opensource:
+- title: JBChartView
+  description: iOS charting library for both line and bar graphs.
+  link: github.com/terryworona/JBChartView # sans http://
+- title: Simple CV
+  description: LaTeX resume generation. 
+  link: github.com/terryworona/simple-cv # sans http://
+- title: TWMessageBarManager
+  description: iOS system-wide notifications via a dropdown message bar.
+  link: github.com/terryworona/TWMessageBarManager # sans http:// 
+
+extra:
+- title: Mobile Face Recognition
+  description: Undergraduate honors project.
+  link: www.dropbox.com/s/6f10q422tc65hiu/Mobile_Face_Recognition.pdf?dl=1 # sans http:// 
 
 # Settings
-mainfont: Hoefler Text
+
 fontsize: 10pt
+geometry: a4paper, left=35mm, right=35mm, top=30mm, bottom=10mm
 lang: en-GB
-geometry: a4paper, left=35mm, right=35mm, top=51mm, bottom=17mm
+mainfont: Hoefler Text
 ---
