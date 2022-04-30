@@ -56,7 +56,9 @@ extra:
   link: developer.apple.com/wwdc22/swift-student-challenge/ # sans http:// 
 
 # Settings
-
+backgroundblue: 0.905
+backgroundgreen: 0.921
+backgroundred: 0.929
 fontsize: 10pt
 geometry: a4paper, left=35mm, right=35mm, top=30mm, bottom=10mm
 lang: en-GB
