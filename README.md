@@ -4,9 +4,9 @@ A simple (automated) template for LaTex formatted résumés.
 
 This repository is a [fork](https://github.com/mrzool/cv-boilerplate) from [mrzool](https://github.com/mrzool)'s original project. Changes include:
 
-- A streamlined/simplified template;
-- Installation instructions for first time LaTeX users;
-- Additional customization options (via template). 
+- A streamlined/simplified template.
+- Installation instructions for first time LaTeX users.
+- Additional customization options (via `template.tex`). 
 
 ## Insallation
 
@@ -71,11 +71,11 @@ LaTeX takes then care of the typesetting with its usual elegance. Below a previe
 
 ## Settings
 
-- `background-red`, `background-green`, `background-blue` - the RGB values for the background color (for plain white, use `1.0`, `1.0`, `1.0`).
-- `mainfont`: Hoefler Text is the default, but any font installed on your system should work.
-- `fontsize`: Possible values here are 10pt, 11pt and 12pt.
-- `lang`: Sets the main language through the `polyglossia` package. This is important for proper hyphenation, among other things.
-- `geometry`: A string that sets the margins through `geometry`. 
+- `background-*` - RGB values for the background color (for white, use `1.0`, `1.0`, `1.0`).
+- `mainfont` - Hoefler Text is the default, but any font installed on your system should work.
+- `fontsize` - possible values here are 10pt, 11pt and 12pt.
+- `lang` - sets the language via `polyglossia` (important for proper hyphenation).
+- `geometry` - a string that sets the margins via `geometry`. 
 
 ## License
 
