@@ -3,7 +3,7 @@
 
 name: John Doe
 address:
-- 1 Infinite Loop
+- One Infinite Loop
 - Cupertino, CA
 - 90210
 phone: "+1 555 123 4567"
@@ -51,14 +51,14 @@ opensource:
   link: github.com/ReactiveX/RxSwift # no http:// 
 
 extra:
-- title: Swift Studio Chanllenge
-  description: 2020 receipient winner - Swift ML
-  link: developer.apple.com/wwdc22/swift-student-challenge/ # sans http:// 
+- title: WWDC Presenter
+  description: Face Tracking with ARKit.
+  link: developer.apple.com/videos/play/tech-talks/601/ # no http:// 
 
 # Settings
-backgroundblue: 0.905
-backgroundgreen: 0.921
-backgroundred: 0.929
+background-red: 0.929
+background-green: 0.921
+background-blue: 0.905
 fontsize: 10pt
 geometry: a4paper, left=35mm, right=35mm, top=30mm, bottom=10mm
 lang: en-GB

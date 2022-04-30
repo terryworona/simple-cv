@@ -67,7 +67,7 @@ It's recommended that you **fork** this repository if you want to maintain your 
 
 ## Settings
 
-- `backgroundblue`, `backgroundgreen`, `backgroundred` - the RGB values for the background color (for plain white, use `1.0`, `1.0`, `1.0`).
+- `background-red`, `background-green`, `background-blue` - the RGB values for the background color (for plain white, use `1.0`, `1.0`, `1.0`).
 - `mainfont`: Hoefler Text is the default, but any font installed on your system should work.
 - `fontsize`: Possible values here are 10pt, 11pt and 12pt.
 - `lang`: Sets the main language through the `polyglossia` package. This is important for proper hyphenation, among other things.
