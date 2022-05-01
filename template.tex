@@ -55,7 +55,7 @@ $endif$
 \subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
 \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
 \titlespacing*{\section}
-{0pt}{0pt}{.5cm} % left, top, bottom
+{0pt}{0pt}{0.35cm} % left, top, bottom
 
 % PDF SETUP
 %--------------------------------
@@ -88,27 +88,40 @@ $endif$
 
 % Name
 $if(name)$
-{\LARGE $name$}\\
+{\LARGE $name$}\\[$spacing-content$]
 $endif$
 
-% Address
-$if(address)$
-$for(address)$
-$address$\\
-$endfor$
+% Address street
+$if(address-street)$
+$address-street$
 $endif$
 
-% Phone 
+% Address city, state
+$if(address-city-state)$
+$address-city-state$
+$endif$
+
+% Address zip
+$if(address-zip)$
+$address-zip$
+$endif$
+
 $if(phone)$
-$phone$
-$endif$
-
-% Email
 $if(email)$
-\href{mailto:$email$}{$email$}
+% Phone and email
+\vspace{$spacing-subsection$}
+$phone$\\
+\href{mailto:$email$}{$email$}\\[$spacing-content$]
+${else}
+% Only phone
+\vspace{$spacing-subsection$}
+$phone$\\
 $endif$
-
-\vspace{.5cm}
+$elseif(email)$
+% Only email
+\vspace{$spacing-subsection$}
+\href{mailto:$email$}{$email$}\\[$spacing-content$]
+$endif$
 
 % INTRO
 %--------------------------------
@@ -116,12 +129,14 @@ $endif$
 % About
 $if(about)$
 $for(about)$
-$about$\\[.5cm]
+$about$\\[$spacing-content$]
 $endfor$
 $endif$
 
 % CONTENT
 %--------------------------------
+
+\vspace{$spacing-content$} % extra space below about list spacing
 
 % Education
 $if(education)$
@@ -129,7 +144,7 @@ $if(education)$
 \noindent
 $for(education)$
 \note{$education.year$}\textsc{$education.subject$}$if(education.degree)$, $education.degree$$endif$\\
-\emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\[.5cm]
+\emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\[$spacing-content$]
 $endfor$
 $endif$
 
@@ -143,7 +158,7 @@ $if(experience)$
 $for(experience)$
 \note{$experience.years$}\textsc{$experience.employer$}\\
 \emph{$experience.job$}\\
-$experience.city$\\[.5cm]
+$experience.city$\\[$spacing-subsection$]
 $endfor$
 $endif$
 
@@ -154,7 +169,7 @@ $if(opensource)$
 \section*{Open Source}
 $for(opensource)$
 \href{http://$opensource.link$}{$opensource.title$}\\
-\emph{$opensource.description$}\\[.5cm]
+\emph{$opensource.description$}\\[$spacing-subsection$]
 $endfor$
 $endif$
 
@@ -163,7 +178,7 @@ $if(extra)$
 \section*{Extra}
 $for(extra)$
 \href{http://$extra.link$}{$extra.title$}\\
-\emph{$extra.description$}\\[.5cm]
+\emph{$extra.description$}\\[$spacing-subsection$]
 $endfor$
 $endif$
 

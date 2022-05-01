@@ -2,10 +2,9 @@
 # Header
 
 name: Terry Worona
-address:
-- 1885 37th Ave
-- San Francisco, CA
-- 94122
+address-street: 1885 37th Ave
+address-city-state: San Francisco, CA
+address-zip: 94122
 phone: "+1 415 990 2303"
 email: terryworona@gmail.com
 
@@ -68,7 +67,10 @@ background-red: 0.929
 background-green: 0.921
 background-blue: 0.905
 fontsize: 10pt
-geometry: a4paper, left=35mm, right=35mm, top=30mm, bottom=10mm
+geometry: a4paper, left=35mm, right=35mm, top=37mm, bottom=11mm
 lang: en-GB
 mainfont: Hoefler Text
+spacing-content: 0.3cm
+spacing-subsection: 0.5cm
+
 ---
