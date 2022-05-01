@@ -1,12 +1,12 @@
 # Simple CV
 
-A simple (automated) template for LaTex formatted résumés.
+A simple (automated) template for LaTex formatted resumes.
 
-This repository is a [fork](https://github.com/mrzool/cv-boilerplate) from [mrzool](https://github.com/mrzool)'s original project. Changes include:
+This repository is a [fork](https://github.com/mrzool/cv-boilerplate) from [mrzool](https://github.com/mrzool)'s original projec with the following changes:
 
-- A streamlined/simplified template;
-- Installation instructions for first time LaTeX users;
-- Additional customization options (via template). 
+- A streamlined/simplified template (for s/w engineers).
+- Install instructions (for first time LaTeX users).
+- Additional customization options. 
 
 ## Insallation
 
@@ -45,33 +45,35 @@ This repository is a [fork](https://github.com/mrzool/cv-boilerplate) from [mrzo
 
 As stated in the original [repository](https://github.com/mrzool/cv-boilerplate) - The separation of content from presentation is considered a universal best practice:
 
-- **Content**: `details.yml` - includes all the specifics about your résumé (i.e. work history, education, etc). 
-- **Presentation**: `template.tex` - defines the overall structure of your résumé. 
-- **Binder**: `makefile` - ties the presentation logic to teh underlyign content to produce `output.pdf`. 
+- **Content**: `details.yml` - includes all the specifics about your resume (i.e. work history, education, etc). 
+- **Presentation**: `template.tex` - defines the overall structure of your resume. 
+- **Binder**: `makefile` - ties the presentation logic to the underlyign content to produce `output.pdf`. 
 
 This structure makes it incredibly easy to update your CV while keeping the structure consistent. 
 
 ## Getting Started
 
-My own personal resume can be found via the branch `/release` where I've tagged different versions of my ever-evolving work history. 
+My own personal resume can be found via the branch `release` where I've tagged different versions of my ever-evolving work history. 
 
-The `main` branch of this repository contains "dummy data" that you can use as a starter project. Simply replace the placeholder information with your own. 
-
-It's recommended that you **fork** this repository if you want to maintain your own personal branch of releases. 
+The `master` branch of this repository contains "dummy data" that you can use as a starter project. Simply replace the placeholder information with your own. 
 
 ## Generation
 
-1. Fill `details.yml` with your personal details, work experience, education, and desired settings.
+1. Fill `details.yml` with your contact info, work experience, education, and desired settings.
 2. Run `make` to compile the PDF.
 3. Tweak on `template.tex` until you're satisfied with the result.
 
+LaTeX takes then care of the typesetting with its usual elegance. Below a preview of the final result. Check out [output](output.pdf) to see the compiled PDF.
+
+![preview](preview.png)
+
 ## Settings
 
-- `background-red`, `background-green`, `background-blue` - the RGB values for the background color (for plain white, use `1.0`, `1.0`, `1.0`).
-- `mainfont`: Hoefler Text is the default, but any font installed on your system should work.
-- `fontsize`: Possible values here are 10pt, 11pt and 12pt.
-- `lang`: Sets the main language through the `polyglossia` package. This is important for proper hyphenation, among other things.
-- `geometry`: A string that sets the margins through `geometry`. 
+- `background-*` - RGB values for the background color (for white, use `1.0`, `1.0`, `1.0`).
+- `mainfont` - Hoefler Text is the default, but any font installed on your system should work.
+- `fontsize` - possible values here are 10pt, 11pt and 12pt.
+- `lang` - sets the language via `polyglossia` (important for proper hyphenation).
+- `geometry` - a string that sets the margins via `geometry`. 
 
 ## License
 
