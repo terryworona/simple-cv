@@ -2,11 +2,11 @@
 
 A simple (automated) template for LaTex formatted resumes.
 
-This repository is a [fork](https://github.com/mrzool/cv-boilerplate) from [mrzool](https://github.com/mrzool)'s original project. Changes include:
+This repository is a [fork](https://github.com/mrzool/cv-boilerplate) from [mrzool](https://github.com/mrzool)'s original projec with the following changes:
 
-- A streamlined/simplified template.
+- A streamlined/simplified template (for s/w engineers).
 - Install instructions (for first time LaTeX users).
-- Additional customization options (via `template.tex`). 
+- Additional customization options. 
 
 ## Insallation
 
@@ -53,7 +53,7 @@ This structure makes it incredibly easy to update your CV while keeping the stru
 
 ## Getting Started
 
-My own personal resume can be found via the branch `/release` where I've tagged different versions of my ever-evolving work history. 
+My own personal resume can be found via the branch `release` where I've tagged different versions of my ever-evolving work history. 
 
 The `master` branch of this repository contains "dummy data" that you can use as a starter project. Simply replace the placeholder information with your own. 
 
