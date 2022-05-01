@@ -109,18 +109,18 @@ $endif$
 $if(phone)$
 $if(email)$
 % Phone and email
-\vspace{0.5cm}
+\vspace{$section-spacing$}
 $phone$\\
-\href{mailto:$email$}{$email$}\\[0.3cm]
+\href{mailto:$email$}{$email$}\\[$content-spacing$]
 ${else}
 % Only phone
-\vspace{0.5cm}
+\vspace{$section-spacing$}
 $phone$\\
 $endif$
 $elseif(email)$
 % Only email
-\vspace{0.5cm}
-\href{mailto:$email$}{$email$}\\[0.3cm]
+\vspace{$section-spacing$}
+\href{mailto:$email$}{$email$}\\[$content-spacing$]
 $endif$
 
 % INTRO
@@ -129,12 +129,14 @@ $endif$
 % About
 $if(about)$
 $for(about)$
-$about$\\[0.3cm]
+$about$\\[$content-spacing$]
 $endfor$
 $endif$
 
 % CONTENT
 %--------------------------------
+
+\vspace{[$content-spacing$]} % extra space below about list spacing
 
 % Education
 $if(education)$
@@ -156,7 +158,7 @@ $if(experience)$
 $for(experience)$
 \note{$experience.years$}\textsc{$experience.employer$}\\
 \emph{$experience.job$}\\
-$experience.city$\\[0.5cm]
+$experience.city$\\[$section-spacing$]
 $endfor$
 $endif$
 
@@ -167,7 +169,7 @@ $if(opensource)$
 \section*{Open Source}
 $for(opensource)$
 \href{http://$opensource.link$}{$opensource.title$}\\
-\emph{$opensource.description$}\\[0.5cm]
+\emph{$opensource.description$}\\[$section-spacing$]
 $endfor$
 $endif$
 
@@ -176,7 +178,7 @@ $if(extra)$
 \section*{Extra}
 $for(extra)$
 \href{http://$extra.link$}{$extra.title$}\\
-\emph{$extra.description$}\\[0.5cm]
+\emph{$extra.description$}\\[$section-spacing$]
 $endfor$
 $endif$
 

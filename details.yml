@@ -63,5 +63,6 @@ fontsize: 10pt
 geometry: a4paper, left=35mm, right=35mm, top=37mm, bottom=11mm
 lang: en-GB
 mainfont: Hoefler Text
+section-spacing: 0.5cm
 
 ---
