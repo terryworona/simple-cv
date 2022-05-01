@@ -58,11 +58,11 @@ extra:
 background-red: 0.929
 background-green: 0.921
 background-blue: 0.905
-content-spacing: 0.3cm
 fontsize: 10pt
 geometry: a4paper, left=35mm, right=35mm, top=37mm, bottom=11mm
 lang: en-GB
 mainfont: Hoefler Text
-section-spacing: 0.5cm
+spacing-content: 0.3cm
+spacing-subsection: 0.5cm
 
 ---

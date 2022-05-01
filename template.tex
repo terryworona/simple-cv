@@ -88,7 +88,7 @@ $endif$
 
 % Name
 $if(name)$
-{\LARGE $name$}\\[$content-spacing$]
+{\LARGE $name$}\\[$spacing-content$]
 $endif$
 
 % Address street
@@ -109,18 +109,18 @@ $endif$
 $if(phone)$
 $if(email)$
 % Phone and email
-\vspace{$section-spacing$}
+\vspace{$spacing-subsection$}
 $phone$\\
-\href{mailto:$email$}{$email$}\\[$content-spacing$]
+\href{mailto:$email$}{$email$}\\[$spacing-content$]
 ${else}
 % Only phone
-\vspace{$section-spacing$}
+\vspace{$spacing-subsection$}
 $phone$\\
 $endif$
 $elseif(email)$
 % Only email
-\vspace{$section-spacing$}
-\href{mailto:$email$}{$email$}\\[$content-spacing$]
+\vspace{$spacing-subsection$}
+\href{mailto:$email$}{$email$}\\[$spacing-content$]
 $endif$
 
 % INTRO
@@ -129,14 +129,14 @@ $endif$
 % About
 $if(about)$
 $for(about)$
-$about$\\[$content-spacing$]
+$about$\\[$spacing-content$]
 $endfor$
 $endif$
 
 % CONTENT
 %--------------------------------
 
-\vspace{[$content-spacing$]} % extra space below about list spacing
+\vspace{$spacing-content$} % extra space below about list spacing
 
 % Education
 $if(education)$
@@ -144,7 +144,7 @@ $if(education)$
 \noindent
 $for(education)$
 \note{$education.year$}\textsc{$education.subject$}$if(education.degree)$, $education.degree$$endif$\\
-\emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\[$content-spacing$]
+\emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\[$spacing-content$]
 $endfor$
 $endif$
 
@@ -158,7 +158,7 @@ $if(experience)$
 $for(experience)$
 \note{$experience.years$}\textsc{$experience.employer$}\\
 \emph{$experience.job$}\\
-$experience.city$\\[$section-spacing$]
+$experience.city$\\[$spacing-subsection$]
 $endfor$
 $endif$
 
@@ -169,7 +169,7 @@ $if(opensource)$
 \section*{Open Source}
 $for(opensource)$
 \href{http://$opensource.link$}{$opensource.title$}\\
-\emph{$opensource.description$}\\[$section-spacing$]
+\emph{$opensource.description$}\\[$spacing-subsection$]
 $endfor$
 $endif$
 
@@ -178,7 +178,7 @@ $if(extra)$
 \section*{Extra}
 $for(extra)$
 \href{http://$extra.link$}{$extra.title$}\\
-\emph{$extra.description$}\\[$section-spacing$]
+\emph{$extra.description$}\\[$spacing-subsection$]
 $endfor$
 $endif$
 

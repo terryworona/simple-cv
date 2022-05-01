@@ -74,6 +74,8 @@ LaTeX takes then care of the typesetting with its usual elegance. Below a previe
 - `fontsize` - possible values here are 10pt, 11pt and 12pt.
 - `lang` - sets the language via `polyglossia` (important for proper hyphenation).
 - `geometry` - a string that sets the margins via `geometry`. 
+- `spacing-content` - vertical space between content within a section (i.e. About). 
+- `spacing-subsection` - vertical space between subcomponents within a section (i.e. Expierence). 
 
 ## License
 
