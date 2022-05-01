@@ -63,7 +63,7 @@ The `master` branch of this repository contains "dummy data" that you can use as
 2. Run `make` to compile the PDF.
 3. Tweak on `template.tex` until you're satisfied with the result.
 
-LaTeX takes then care of the typesetting with its usual elegance. Below a preview of the final result. Check out [output](output.pdf) to see the compiled PDF.
+LaTeX takes then care of the typesetting with its usual elegance. Below a preview of the final result. 
 
 ![preview](preview.png)
 
