@@ -2,7 +2,7 @@
 
 A simple (automated) template for LaTex formatted resumes.
 
-This repository is a [fork](https://github.com/mrzool/cv-boilerplate) from [mrzool](https://github.com/mrzool)'s original projec with the following changes:
+This repository is a [fork](https://github.com/mrzool/cv-boilerplate) from [mrzool](https://github.com/mrzool)'s original project with the following changes:
 
 - A streamlined/simplified template (for s/w engineers).
 - Install instructions (for first time LaTeX users).
