@@ -47,7 +47,7 @@ As stated in the original [repository](https://github.com/mrzool/cv-boilerplate)
 
 - **Content**: `details.yml` - includes all the specifics about your resume (i.e. work history, education, etc). 
 - **Presentation**: `template.tex` - defines the overall structure of your resume. 
-- **Binder**: `makefile` - ties the presentation logic to the underlyign content to produce `output.pdf`. 
+- **Binder**: `makefile` - ties the presentation logic to the underlying content to produce `output.pdf`. 
 
 This structure makes it incredibly easy to update your CV while keeping the structure consistent. 
 
@@ -61,9 +61,9 @@ The `master` branch of this repository contains "dummy data" that you can use as
 
 1. Fill `details.yml` with your contact info, work experience, education, and desired settings.
 2. Run `make` to compile the PDF.
-3. Tweak on `template.tex` until you're satisfied with the result.
+3. Tweak `template.tex` until you're satisfied with the result.
 
-LaTeX takes then care of the typesetting with its usual elegance. Below a preview of the final result. 
+LaTeX takes then care of the typesetting with its usual elegance. Below is a preview of the final result. 
 
 ![preview](preview.png)
 
