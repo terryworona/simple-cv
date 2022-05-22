@@ -109,17 +109,23 @@ $endif$
 $if(phone)$
 $if(email)$
 % Phone and email
-\vspace{$spacing-subsection$}
+$if(address-zip)$
+\vspace{$spacing-subsection$} % only space if full address above
+$endif$
 $phone$\\
 \href{mailto:$email$}{$email$}\\[$spacing-content$]
 ${else}
 % Only phone
-\vspace{$spacing-subsection$}
+$if(address-zip)$
+\vspace{$spacing-subsection$} % only space if full address above
+$endif$
 $phone$\\
 $endif$
 $elseif(email)$
 % Only email
-\vspace{$spacing-subsection$}
+$if(address-zip)$
+\vspace{$spacing-subsection$} % only space if full address above
+$endif$
 \href{mailto:$email$}{$email$}\\[$spacing-content$]
 $endif$
 
