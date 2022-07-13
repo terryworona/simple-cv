@@ -13,7 +13,7 @@ This repository is a [fork](https://github.com/mrzool/cv-boilerplate) from [mrzo
 1. Clone repository:
 
     ```
-    $ git clone git@github.com:terryworona/simple-cv.git
+    git clone git@github.com:terryworona/simple-cv.git
     ```
 
 2. Download and install [TinyTeX](https://yihui.org/tinytex/):
@@ -27,18 +27,18 @@ This repository is a [fork](https://github.com/mrzool/cv-boilerplate) from [mrzo
 4. Install the following packages (via [tlmgr](https://www.tug.org/texlive/tlmgr.html) - included with [TinyTeX](https://yihui.org/tinytex/)):
 
     ```
-    $ tlmgr install fontspec
-    $ tlmgr install geometry
-    $ tlmgr install hyperref
-    $ tlmgr install marginnote
-    $ tlmgr install multicol
-    $ tlmgr install pagecolor
-    $ tlmgr install polyglossia
-    $ tlmgr install sectsty
-    $ tlmgr install titlesec
-    $ tlmgr install ulem
-    $ tlmgr install xltxtra
-    $ tlmgr install xunicode
+    tlmgr install fontspec
+    tlmgr install geometry
+    tlmgr install hyperref
+    tlmgr install marginnote
+    tlmgr install multicol
+    tlmgr install pagecolor
+    tlmgr install polyglossia
+    tlmgr install sectsty
+    tlmgr install titlesec
+    tlmgr install ulem
+    tlmgr install xltxtra
+    tlmgr install xunicode
     ```
 
 ## Configuration
