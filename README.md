@@ -29,11 +29,13 @@ This repository is a [fork](https://github.com/mrzool/cv-boilerplate) from [mrzo
     ```
     $ tlmgr install fontspec
     $ tlmgr install geometry
+    $ tlmgr install hardwrap
     $ tlmgr install hyperref
     $ tlmgr install marginnote
     $ tlmgr install multicol
     $ tlmgr install pagecolor
     $ tlmgr install polyglossia
+    $ tlmgr install realscripts
     $ tlmgr install sectsty
     $ tlmgr install titlesec
     $ tlmgr install ulem

@@ -83,6 +83,8 @@ $endif$
 
 \pagecolor{background}
 
+\hyphenation{animation industries message} % prevent hyphenation of certain words
+
 % HEADER
 %--------------------------------
 
@@ -156,7 +158,7 @@ $endif$
 
 % 2 column layout
 \begin{multicols}{2}
-
+\vtop{\null % start vertical align column
 % Expierence
 $if(experience)$
 \section*{Experience}
@@ -167,8 +169,11 @@ $for(experience)$
 $experience.city$\\[$spacing-subsection$]
 $endfor$
 $endif$
+\null} % end vertical align column
 
 \columnbreak % new column
+
+\vtop{\null % start vertical align column
 
 % Open Source
 $if(opensource)$ 
@@ -187,6 +192,17 @@ $for(extra)$
 \emph{$extra.description$}\\[$spacing-subsection$]
 $endfor$
 $endif$
+
+% Patents
+$if(patent)$
+\section*{Patents}
+$for(patent)$
+\href{http://$patent.link$}{$patent.title$}\\
+\emph{$patent.description$}\\[$spacing-subsection$]
+$endfor$
+$endif$
+
+\null} % end vertical align column
 
 \end{multicols}
 

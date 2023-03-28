@@ -58,6 +58,11 @@ extra:
   description: Undergraduate honors project.
   link: www.dropbox.com/s/6f10q422tc65hiu/Mobile_Face_Recognition.pdf?dl=1 # no http:// 
 
+patent:
+- title: Pairing Transport Service
+  description: Device pairing for ride requests via CV input animation.
+  link: patents.google.com/patent/US20200098075A1/en?oq=US-20200098075-A1 # no http:// 
+
 # Settings
 
 background-red: 0.929
