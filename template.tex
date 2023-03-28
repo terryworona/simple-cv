@@ -54,8 +54,7 @@ $endif$
 \sectionfont{\rmfamily\mdseries} 
 \subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
 \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
-\titlespacing*{\section}
-{0pt}{0pt}{0.35cm} % left, top, bottom
+\titlespacing*{\section}{0pt}{0pt}{0.25cm} % left, top, bottom
 
 % PDF SETUP
 %--------------------------------
@@ -156,6 +155,8 @@ $for(education)$
 $endfor$
 $endif$
 
+\titlespacing*{\section}{0pt}{-0.50cm}{0.25cm} % left, top, bottom
+
 % 2 column layout
 \begin{multicols}{2}
 \vtop{\null % start vertical align column
@@ -183,6 +184,8 @@ $for(opensource)$
 \emph{$opensource.description$}\\[$spacing-subsection$]
 $endfor$
 $endif$
+
+\titlespacing*{\section}{0pt}{-0.25cm}{0.25cm} % left, top, bottom
 
 % Extra
 $if(extra)$
